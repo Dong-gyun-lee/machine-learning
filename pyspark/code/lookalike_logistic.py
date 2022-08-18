@@ -22,7 +22,7 @@ spark = SparkSession.builder\
 .appName(appname).master(master).config('spark.driver.memory','10g')\
 .config('spark.executor.memory','10g')\
 .config('spark.ui.port','4051')\
-.config('spark.local.dir', '/DATA/dglee/JupyterLab/tmp')\
+.config('spark.local.dir', 'directory ')\
 .getOrCreate()
 
 
