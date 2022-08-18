@@ -25,5 +25,5 @@ print(f"time:{end-start} sec")
 ## 실루엣계수를 보고 중심갯수 설정하여 클러스터링 결과 확인
 
 k_number = np.argmax(silhouette_scores)+2 # 시작이 2부터라서 2 더해줌
-data_cluster = data.select("cluster"+str(k_number))
+data_cluster = data.select("cluster_"+str(k_number))
 data_center = centers[k_number-2]
